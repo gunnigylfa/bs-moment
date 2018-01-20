@@ -135,7 +135,7 @@ let () =
         test(
           "#utc",
           () =>
-            expect(momentNow() |> MomentRe.Moment.utc("2018-01-22") |> Moment.isValid) |> toBe(true)
+            expect(momentNow() |> MomentRe.Moment.utc() |> Moment.isValid) |> toBe(true)
         );
         test (
           "#locale",

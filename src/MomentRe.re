@@ -134,7 +134,7 @@ module Moment = {
   /* display */
   [@bs.send.pipe : t] external format : string => string = "";
   [@bs.send.pipe : t] external defaultFormat : string = "format";
-  [@bs.send.pipe : t] external utc : string => t = "";
+  [@bs.send.pipe : t] external utc : unit => t = "";
   [@bs.send.pipe : t] external locale : string => t = "";
   [@bs.send] external fromNow : (t, ~withoutSuffix: option(bool)) => string = "";
   [@bs.send] external fromMoment : (t, ~other: t, ~format: option(string)) => string = "from";
